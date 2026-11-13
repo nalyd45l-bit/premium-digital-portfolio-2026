@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://nalyd45l-bit.github.io/piot-analytics/",
+    "status": 200,
+    "final_url": "https://nalyd45l-bit.github.io/piot-analytics/",
+    "snippet": "<!doctype html>\n<html lang=\"ru\">\n<head>\n<base target=\"_top\">\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Life Pay</title>\n<!--"
+  },
+  {
+    "url": "https://life-pay-piot.tiiny.site/",
+    "status": 200,
+    "final_url": "https://life-pay-piot.tiiny.site/",
+    "snippet": "\n                        <!DOCTYPE html>\n                        <html lang=\"en\">\n                        <head>\n                            <meta charset=\"UTF-8\">\n                "
+  },
+  {
+    "url": "https://life-pay-web-6a5k.vercel.app/",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://nalyd45l-bit.github.io/salary-increase-portfolio/",
+    "status": 200,
+    "final_url": "https://nalyd45l-bit.github.io/salary-increase-portfolio/",
+    "snippet": "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n<meta charset=\"utf-8\"/>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n<meta name=\"theme-color\" content=\"#f4f6fa\"/>\n<"
+  }
+]

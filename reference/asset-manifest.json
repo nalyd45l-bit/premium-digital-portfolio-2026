@@ -1,0 +1,226 @@
+[
+  {
+    "path": "public/source-materials/assets/dmitry-kozlov-cf7163d559.jpg",
+    "source_path": "assets/dmitry-kozlov-cf7163d559.jpg",
+    "bytes": 92625,
+    "sha256": "cf7163d55978da7d5ddf55003a555bb7fed83c213b1933e12e4e30fe2be585af",
+    "media": "753×921; 0.040 с"
+  },
+  {
+    "path": "public/source-materials/assets/erp-portal-original.webp",
+    "source_path": "assets/erp-portal-original.webp",
+    "bytes": 193382,
+    "sha256": "7d9e0f16840d5955eb2ba754345df085ebd11f441205b4a155308991870e81b7",
+    "media": "1600×900"
+  },
+  {
+    "path": "public/source-materials/assets/esp-original.webp",
+    "source_path": "assets/esp-original.webp",
+    "bytes": 32438,
+    "sha256": "20403b38839daba647d4a6c3a97a1fb1ef7765e0ebb6d802acff3ad3cd7fbe71",
+    "media": "960×540"
+  },
+  {
+    "path": "public/source-materials/assets/favicon.svg",
+    "source_path": "assets/favicon.svg",
+    "bytes": 164,
+    "sha256": "2ada1992b421d2b18a51bae69f003139a9faa9815d0bcb9fffa3f6c2673e6701",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/fn-bot-original.webp",
+    "source_path": "assets/fn-bot-original.webp",
+    "bytes": 25784,
+    "sha256": "4cab1d5c25b8e4391b30b761e3ecf1cb80b11373100c9043e94ae10579938119",
+    "media": "622×365"
+  },
+  {
+    "path": "public/source-materials/assets/fonts/Manrope-OFL.txt",
+    "source_path": "assets/fonts/Manrope-OFL.txt",
+    "bytes": 4387,
+    "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/fonts/manrope-cyrillic.woff2",
+    "source_path": "assets/fonts/manrope-cyrillic.woff2",
+    "bytes": 14352,
+    "sha256": "447c49583b1b735cc6f566151db1d24354cec41076c55dd98455cfbde9e806c1",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/fonts/manrope-latin-ext.woff2",
+    "source_path": "assets/fonts/manrope-latin-ext.woff2",
+    "bytes": 15160,
+    "sha256": "2f7335119075b2079f1d882530bbc18728461612bf90743203d73a74a48f4d9b",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/fonts/manrope-latin.woff2",
+    "source_path": "assets/fonts/manrope-latin.woff2",
+    "bytes": 24532,
+    "sha256": "8c2def024c1bf31aacf3624ae3c4d701269b4ec3dc765c04830839f0d36b2d9e",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/lifepay-logo-BlyhidjW.svg",
+    "source_path": "assets/lifepay-logo-BlyhidjW.svg",
+    "bytes": 3851,
+    "sha256": "b57d6936cb02943e933bc419f7ed870fff01dd887cb41586df5ab247de0412fa",
+    "media": "—"
+  },
+  {
+    "path": "public/source-materials/assets/lifepay-logo.png",
+    "source_path": "assets/lifepay-logo.png",
+    "bytes": 21618,
+    "sha256": "079740a377171cb16b4695d0c0b89f99b93a2a859a08fc37c4ce143bfccf4c74",
+    "media": "235×77"
+  },
+  {
+    "path": "public/source-materials/assets/media/account-loop.mp4",
+    "source_path": "assets/media/account-loop.mp4",
+    "bytes": 1143360,
+    "sha256": "2860727efa2af313aa67399c89e9d4367b2f962a31db05d537f5c9eb4f66a6c2",
+    "media": "1280×720; 9.250 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/account-mobile.mp4",
+    "source_path": "assets/media/account-mobile.mp4",
+    "bytes": 510204,
+    "sha256": "c207fa1e11883c1baeb54c5a1f3a977c7030901fa47e9550aa12bd1842b63ba7",
+    "media": "854×480; 9.250 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/account-poster.webp",
+    "source_path": "assets/media/account-poster.webp",
+    "bytes": 45314,
+    "sha256": "23afc48998ed111469c97f0f0da7cde74c74cb63f0b5d3ec84d386b070e53cc0",
+    "media": "1280×720"
+  },
+  {
+    "path": "public/source-materials/assets/media/fn36-loop.mp4",
+    "source_path": "assets/media/fn36-loop.mp4",
+    "bytes": 1167628,
+    "sha256": "33516d3a0b1458f97beae10ef24d9106bb5ff5ffcb1a0bfd7d692beb2cca2b32",
+    "media": "1280×720; 9.250 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/fn36-mobile.mp4",
+    "source_path": "assets/media/fn36-mobile.mp4",
+    "bytes": 530153,
+    "sha256": "6f4889b2fabdd26a6ca8b40ffbb5cc72669242022cbf33d5a5c2f467a6487362",
+    "media": "854×480; 9.250 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/fn36-poster.webp",
+    "source_path": "assets/media/fn36-poster.webp",
+    "bytes": 25378,
+    "sha256": "79ec47edecba2e940bd4e4646d8979550780dfe52a92107a93d9524c1690c62d",
+    "media": "1280×720"
+  },
+  {
+    "path": "public/source-materials/assets/media/hero-loop.mp4",
+    "source_path": "assets/media/hero-loop.mp4",
+    "bytes": 1457848,
+    "sha256": "c96cd78cae492eac2b06ab04cd0d643109a78d71c654e5940f2688359d03fa88",
+    "media": "1280×720; 14.167 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/hero-mobile.mp4",
+    "source_path": "assets/media/hero-mobile.mp4",
+    "bytes": 672598,
+    "sha256": "cc67555c3455870e19d7e29ca30bd47db00c5137a9e32bbf00577f54bbc8242d",
+    "media": "854×480; 14.167 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/hero-poster.webp",
+    "source_path": "assets/media/hero-poster.webp",
+    "bytes": 40702,
+    "sha256": "0b035065de65e5727a6339b5671e47443fd9b63573bf777c94c0b68b2294b6f5",
+    "media": "1280×720"
+  },
+  {
+    "path": "public/source-materials/assets/media/payment-loop.mp4",
+    "source_path": "assets/media/payment-loop.mp4",
+    "bytes": 2307274,
+    "sha256": "90b790a494601bf31113812a822317cb7381191ee7cea4edbcb1491f4821f5f7",
+    "media": "1280×720; 14.167 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/payment-mobile.mp4",
+    "source_path": "assets/media/payment-mobile.mp4",
+    "bytes": 1082023,
+    "sha256": "27bbe95a658fa3cfd70a492de396d05a9052f5f6b0454243e38921bdb731c785",
+    "media": "854×480; 14.167 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/payment-poster.webp",
+    "source_path": "assets/media/payment-poster.webp",
+    "bytes": 52304,
+    "sha256": "9427b9ecaea41671a7db87695510eea4cadb60b24f7ea231276894f1a6fd3bcc",
+    "media": "1280×720"
+  },
+  {
+    "path": "public/source-materials/assets/media/source-account.mp4",
+    "source_path": "assets/media/source-account.mp4",
+    "bytes": 4067852,
+    "sha256": "9dff76f4d8c779895bf0658421b3e08e6da22f5c28a5e6aaf2bc2603699c67fe",
+    "media": "1280×720; 10.027 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/source-fn.mp4",
+    "source_path": "assets/media/source-fn.mp4",
+    "bytes": 4061503,
+    "sha256": "6f3923f0ac54fbc030d6e6d4733f405abecb48561d909f16da2db4d9788f6b53",
+    "media": "1280×720; 10.027 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/source-payment.mp4",
+    "source_path": "assets/media/source-payment.mp4",
+    "bytes": 8818458,
+    "sha256": "380c35d857499b91e61ae26aa63e8d569711f55feb45c68be688fc338328a24c",
+    "media": "1920×1080; 14.930 с"
+  },
+  {
+    "path": "public/source-materials/assets/media/source-terminal.mp4",
+    "source_path": "assets/media/source-terminal.mp4",
+    "bytes": 5879448,
+    "sha256": "674eff29f2e6623d2b88bda24215fe53e40f3ccd5b378b14c0a9f9debc27cc0d",
+    "media": "1920×1080; 14.930 с"
+  },
+  {
+    "path": "public/source-materials/assets/partner-intake-original.webp",
+    "source_path": "assets/partner-intake-original.webp",
+    "bytes": 96408,
+    "sha256": "ddc2cfb9c5821d5aea16807288605668eeff6ec8d9d42efcc8ada6fa184563ef",
+    "media": "1600×900"
+  },
+  {
+    "path": "public/source-materials/assets/piot-original.webp",
+    "source_path": "assets/piot-original.webp",
+    "bytes": 77498,
+    "sha256": "cd8f277b2eede887c40bdf8deb327886412fb998d42ac8a977399c88ab05af86",
+    "media": "1600×924"
+  },
+  {
+    "path": "public/source-materials/assets/project-1.webp",
+    "source_path": "assets/project-1.webp",
+    "bytes": 19020,
+    "sha256": "3a6551726cf2a655261627915d641f3907f401ba25696ce34ea51ede3e88c854",
+    "media": "720×416"
+  },
+  {
+    "path": "public/source-materials/assets/project-3.webp",
+    "source_path": "assets/project-3.webp",
+    "bytes": 44564,
+    "sha256": "e7935c388eaf4e9cd5a5e74a5a071ab1c54ee86ebe7f5fdc6f40f8e25e31bdbc",
+    "media": "720×405"
+  },
+  {
+    "path": "public/source-materials/assets/project-4.webp",
+    "source_path": "assets/project-4.webp",
+    "bytes": 23350,
+    "sha256": "961d0c23b974dc549fc75d03f250a59e26d197fd249070963793f3cf493d815c",
+    "media": "720×405"
+  }
+]
