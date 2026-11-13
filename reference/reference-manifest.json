@@ -1,0 +1,140 @@
+[
+  {
+    "path": "reference/legacy-docs/ORIGINAL-GLASS-QA.md",
+    "source_path": "docs/ORIGINAL-GLASS-QA.md",
+    "bytes": 4598,
+    "sha256": "36ac0a384e283794d36c508e0cb8ce0febaf4e6806d5c87c40abbfdbf6cb6655"
+  },
+  {
+    "path": "reference/legacy-docs/QA-FN36.md",
+    "source_path": "docs/QA-FN36.md",
+    "bytes": 14806,
+    "sha256": "8a044267598c14428b495b4a030e856eac420c413ad23763a380c250c693806a"
+  },
+  {
+    "path": "reference/legacy-docs/QA-REPORT.md",
+    "source_path": "docs/QA-REPORT.md",
+    "bytes": 14556,
+    "sha256": "cb775bc838644899b49b4b3aabdd36593fc8461713b93de3f9d2383a423bbc65"
+  },
+  {
+    "path": "reference/legacy-docs/READABILITY-QA.md",
+    "source_path": "docs/READABILITY-QA.md",
+    "bytes": 9984,
+    "sha256": "cda1f4d93aadc7aac89165b43f04e25b108ac8302e085b14287db303c5aaeae4"
+  },
+  {
+    "path": "reference/legacy-docs/SOURCES.md",
+    "source_path": "docs/SOURCES.md",
+    "bytes": 15827,
+    "sha256": "4197209d74a797552abdbae31c90f008ead4cf6b28251639f25c46614081cf7d"
+  },
+  {
+    "path": "reference/legacy-docs/external-link-check.json",
+    "source_path": "docs/external-link-check.json",
+    "bytes": 823,
+    "sha256": "65edda0715d6783313a619bd19d7c0f28186fbfbe54df30d6eeb5140ebbf3b5d"
+  },
+  {
+    "path": "reference/legacy-docs/portfolio-preview.pdf",
+    "source_path": "docs/portfolio-preview.pdf",
+    "bytes": 4027306,
+    "sha256": "d60b6b08b666dafd75b67130c459f9fe878bcfa1a6cc0f78286865bb6fec41aa"
+  },
+  {
+    "path": "reference/legacy-docs/preview-account.png",
+    "source_path": "docs/preview-account.png",
+    "bytes": 1113771,
+    "sha256": "66d38662089cc0a239131b1a81ea6b730f08d24cf066d20dc3e6f7e8ce0e1b9a"
+  },
+  {
+    "path": "reference/legacy-docs/preview-continuous.png",
+    "source_path": "docs/preview-continuous.png",
+    "bytes": 844859,
+    "sha256": "010885e1d253cc0b43fcf373d4fa576ec678904b38eeab343ce2f2730421c855"
+  },
+  {
+    "path": "reference/legacy-docs/preview-desktop.png",
+    "source_path": "docs/preview-desktop.png",
+    "bytes": 928978,
+    "sha256": "c71fa06f695a5dee9c931aa08686ad25229b3a8e2ee5fce52800435f4c4ae999"
+  },
+  {
+    "path": "reference/legacy-docs/preview-finale.png",
+    "source_path": "docs/preview-finale.png",
+    "bytes": 291326,
+    "sha256": "01a1f3e20536a7dbdffd65bfb76c8e9a055446d8c5839c0efaff0becbf2ec644"
+  },
+  {
+    "path": "reference/legacy-docs/preview-fn36-iphone.png",
+    "source_path": "docs/preview-fn36-iphone.png",
+    "bytes": 1390187,
+    "sha256": "5349f6dc0660ea8fe0eb7bd6fc302f553bb5fd5683aa30ad941677e8ffa57e5f"
+  },
+  {
+    "path": "reference/legacy-docs/preview-fn36.png",
+    "source_path": "docs/preview-fn36.png",
+    "bytes": 1024722,
+    "sha256": "d5e37da63149e69203144028fe8a79de6aed37caab4fbd43e71ce1fe69d97ac7"
+  },
+  {
+    "path": "reference/legacy-docs/preview-iphone.png",
+    "source_path": "docs/preview-iphone.png",
+    "bytes": 1165565,
+    "sha256": "e48b058bdce8e70f186de22bed65e29a4125f12b2068aed0205c5cc3c178f5dd"
+  },
+  {
+    "path": "reference/legacy-docs/preview-payment.png",
+    "source_path": "docs/preview-payment.png",
+    "bytes": 1067447,
+    "sha256": "9393cbfdb855ec642392cba7be213f6a0063874a3593c2dab40077587c4661b8"
+  },
+  {
+    "path": "reference/legacy-docs/preview-profile-iphone.png",
+    "source_path": "docs/preview-profile-iphone.png",
+    "bytes": 2643762,
+    "sha256": "a7588af7f109632e22063716c3f64637ecf4f6dc3e9d2dc792623c8ae57bd233"
+  },
+  {
+    "path": "reference/legacy-docs/preview-profile.png",
+    "source_path": "docs/preview-profile.png",
+    "bytes": 926658,
+    "sha256": "8c9f27a890ac6ed7799404417801d885981a2548091f682ce2b82798aefabc55"
+  },
+  {
+    "path": "reference/legacy-docs/preview-project.png",
+    "source_path": "docs/preview-project.png",
+    "bytes": 793446,
+    "sha256": "3a146d2e5380806e777cadf01d247b6be12f26ba85f447272d7a442c8c13d2d5"
+  },
+  {
+    "path": "reference/legacy-docs/preview-projects.png",
+    "source_path": "docs/preview-projects.png",
+    "bytes": 123293,
+    "sha256": "66685e9c08d7767fa9e9fda35f0497b80b7336a4b865c30aeb8bba5d88c64dc7"
+  },
+  {
+    "path": "reference/legacy-docs/preview-responsibility.png",
+    "source_path": "docs/preview-responsibility.png",
+    "bytes": 676698,
+    "sha256": "a22c51be5967e2f43757d5862807e49754015518e4a895d62628c732c4cf7378"
+  },
+  {
+    "path": "reference/legacy-docs/qa-contrast.json",
+    "source_path": "docs/qa-contrast.json",
+    "bytes": 5243,
+    "sha256": "fa568ce686ea70d5bfde8584f2005e6f4ef2a9c76effc6722c1fd25e729beb43"
+  },
+  {
+    "path": "reference/legacy-docs/qa-load-observations.json",
+    "source_path": "docs/qa-load-observations.json",
+    "bytes": 2270,
+    "sha256": "69b9f94c7bf5f218d2d51b7b7817cdb614dae3eaef231b843aa41538f355d1cc"
+  },
+  {
+    "path": "reference/legacy-docs/qa-original-glass.json",
+    "source_path": "docs/qa-original-glass.json",
+    "bytes": 26147,
+    "sha256": "59ad11d7268bbaae8f25eeff2ba787f4d5d4cbcd7f49dcc41348fb159f3c9c04"
+  }
+]
