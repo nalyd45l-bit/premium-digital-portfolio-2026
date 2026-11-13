@@ -1,0 +1,2 @@
+import {Download} from 'lucide-react';import {siteCopy} from '../content/site';import {track} from '../lib/analytics';
+export function ResumeLink({compact=false}:{compact?:boolean}){return <a className={`resume-link glass ${compact?'compact':''}`} href={siteCopy.resume.url} download={siteCopy.resume.filename} onClick={()=>track('resume_download')}><Download size={17}/><span>{siteCopy.resume.label}</span>{!compact&&<small>PDF · 599 КБ</small>}</a>}

@@ -1,0 +1,9 @@
+{
+  "spreadsheet": "https://docs.google.com/spreadsheets/d/1A6C9cAVfMTkG165PIDkD1jNpH9KOc7N3bKM2d0UiJU4/edit",
+  "sheet": "Предложения",
+  "range": "A:M",
+  "access": "owner-only verified",
+  "ga4": "awaiting Measurement ID",
+  "offers": "awaiting Apps Script deployment and Turnstile",
+  "backups": "code prepared; trigger not activated"
+}
