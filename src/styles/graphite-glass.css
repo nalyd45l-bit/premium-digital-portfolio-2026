@@ -1,4 +1,270 @@
-/* A continuous silver-grey environment, inspired by the original portfolio. */
-:root,body{background:#3e4e5d;color:#f0f5fa}.cinematic-portfolio{position:relative;isolation:isolate;color:#f0f5fa;background:transparent;min-height:100svh}.cinematic-portfolio::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(140deg,#354657bf,#263746d9),url('/images/professional-growth-poster.jpg') 50% 50%/cover no-repeat}.cinematic-portfolio :is(.career-section,.career-details,.capability-workspace,.portfolio-projects,.portfolio-results,.portfolio-contact){background:transparent!important;color:#f2f6fb}.cinematic-portfolio .scene-bridge{background:linear-gradient(#52637466,#344b5e4d);color:#e6f1f9}.cinematic-portfolio :is(.section-heading,.career-heading,.capability-heading,.capability-bottom,.project-summary-row,.metrics-row,.directions,.contact-copy,.workspace-footer){color:#f0f5fc}.cinematic-portfolio :is(.section-heading,.career-heading,.capability-heading,.capability-bottom,.project-summary-row,.metric,.directions,.contact-copy,.workspace-footer) :is(h1,h2,h3,p,span,small,a,button){color:inherit!important}.cinematic-portfolio :is(.section-heading,.career-heading,.capability-heading,.directions,.contact-copy) .eyebrow{color:#bfd7ec!important}.cinematic-portfolio .serif,.cinematic-portfolio .muted{color:#d3e2ef!important}.cinematic-portfolio .glass{background:linear-gradient(135deg,#bacbd626,#8fa6b71a 42%,#122c3f45)!important;border:1px solid #eaf6ff42!important;color:#f4f8fd!important;box-shadow:inset 0 1px 0 #ffffff66,inset 0 -1px 0 #b6cfdf1a,0 15px 45px #11293e29!important;backdrop-filter:blur(12px) saturate(120%)!important;-webkit-backdrop-filter:blur(12px) saturate(120%)!important}.cinematic-portfolio .glass :is(h1,h2,h3,p,small,li,label,span,a,button){color:inherit!important}.cinematic-portfolio .glass :is(p,li,small){color:#e8f1fa!important;text-shadow:0 1px 3px #10253866}.cinematic-portfolio .glass .eyebrow{color:#c0dcef!important}.cinematic-portfolio .hero-panel,.cinematic-portfolio .step-glass-card{background:linear-gradient(130deg,rgba(48,64,79,.74),rgba(29,47,63,.69))!important;backdrop-filter:blur(6px) saturate(115%)!important}.cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{color:#f7fbff!important;text-shadow:0 2px 12px #0d233b66}.cinematic-portfolio .hero-panel :is(p,small),.cinematic-portfolio .hero-position,.cinematic-portfolio .hero-description{color:#eef6ff!important;text-shadow:0 1px 5px #09273b80}.cinematic-portfolio .hero-card{background:linear-gradient(130deg,#536d80a3,#243e5294)!important}.cinematic-portfolio .hero-shade{background:linear-gradient(0deg,#182e4359,transparent 32%,transparent 85%,#29415224)}.cinematic-portfolio .workspace-header :is(.site-identity,.workspace-nav,.workspace-menu){background:linear-gradient(135deg,#93a9b84d,#2e485f75)!important;color:#f4f9ff!important;border-color:#eaf7ff54;backdrop-filter:blur(13px);box-shadow:inset 0 1px 0 #ffffff66,0 6px 20px #142d4321}.cinematic-portfolio .workspace-header :is(.site-identity,.workspace-nav) :is(strong,span,a){color:#f4f9ff!important}.cinematic-portfolio .workspace-header>.resume-link{background:#7894aa40!important;color:#f5faff!important}.cinematic-portfolio .glass .button.dark{background:linear-gradient(125deg,#152f4778,#183a5266)!important;color:white!important;border-color:#e2f3ff61}.cinematic-portfolio .glass .resume-link{background:#c3ddef1f!important;color:#f5faff!important;border-color:#e9f8ff61!important}.cinematic-portfolio .capability-categories{background:#152f4226;border-color:#c5dfef38}.cinematic-portfolio .capability-categories button{color:#edf6ff!important}.cinematic-portfolio .capability-categories button[aria-pressed=true]{background:linear-gradient(130deg,#bed7e82e,#6687a029)!important;border-color:#e6f6ff75;box-shadow:inset 0 1px 0 #fff6}.cinematic-portfolio .tool-button{background:linear-gradient(135deg,#b6d0e51f,#6389a41a)!important;border-color:#b8d5e34d;color:#f1f8ff!important;box-shadow:inset 0 1px 0 #ffffff38,0 5px 16px #0b22391a}.cinematic-portfolio .tool-button.selected{background:linear-gradient(130deg,#bedbed45,#7bacc02e)!important;border-color:#d1edffaa;box-shadow:inset 0 1px 0 #ffffff91,0 7px 18px #132e4530}.cinematic-portfolio .technology-mark{background:linear-gradient(130deg,#e7f3fbeb,#bdd9edcc)!important;color:#294e69!important;border-color:#eef9ffbf}.cinematic-portfolio .technology-mark>svg{color:#294e69!important}.cinematic-portfolio .glass .tech-arrow{color:#d2e8fa!important}.cinematic-portfolio .tool-detail{background:linear-gradient(130deg,#6f95af24,#16324947)!important;border-color:#d4edfa47!important}.cinematic-portfolio .timeline-item{background:linear-gradient(130deg,#b6cfdf24,#2c48614d)!important}.cinematic-portfolio .timeline-item.is-open{background:linear-gradient(130deg,#abc9dc3b,#213e5670)!important}.cinematic-portfolio .glass .skill-tags span,.cinematic-portfolio .glass .project-tech-tags span,.cinematic-portfolio .project-tech-tags span{background:#bddef219;border-color:#d2eaf84d;color:#e9f7ff!important}.cinematic-portfolio .glass .status-dot{background:#a3d5bf}.cinematic-portfolio .project-tabs{border-color:#b5d0e04f}.cinematic-portfolio .project-tabs button{color:#d7e9f7;border-color:#b5d0e04f}.cinematic-portfolio .project-tabs .selected{color:#fff}.cinematic-portfolio .project-tabs .selected::after{background:#d3eaff}.cinematic-portfolio .case-demo,.cinematic-portfolio .project-summary-row .text-link{color:#e8f5ff}.cinematic-portfolio .stage-label{color:#e6f5ff}.cinematic-portfolio .case-image{background:#5e788a26}.cinematic-portfolio .case-image-fn{background:radial-gradient(ellipse at 50% 40%,#b9d9ea26,#314e6740)}.cinematic-portfolio .glass .image-inspect{background:#24475ee6!important;color:#f4fbff!important}.cinematic-portfolio .result-company-label{color:#f3f8ff;border-color:#bdd8e354}.cinematic-portfolio .result-company-label>span:last-child{color:#d3e5f3}.cinematic-portfolio .metric{border-color:#c2d9e44a}.cinematic-portfolio .metric-value,.cinematic-portfolio .armada-number>span{color:#f2f8ff}.cinematic-portfolio .offer-form :is(input:not([type=checkbox]),select,textarea){background:#193b524d;color:#f4f9ff;border-color:#bfdceb66}.cinematic-portfolio .offer-form input::placeholder{color:#c7dce9}.cinematic-portfolio .offer-form option{background:#445e73;color:#fff}.cinematic-portfolio .offer-form .form-unavailable{background:#17364d42;border-color:#a7cbde4f}.cinematic-portfolio .privacy-settings{color:#e3f0fa}.cinematic-portfolio .workspace-footer{border-color:#bad5e44a}.cinematic-portfolio .project-dialog,.cinematic-portfolio .tech-dialog{background:linear-gradient(135deg,#496274fa,#2e4c63f7);color:#f3f8ff;border-color:#d0e7f775}.cinematic-portfolio .project-dialog :is(h2,h3,p,li),.cinematic-portfolio .tech-dialog :is(h2,h3,p){color:#eaf4fd!important}.cinematic-portfolio .project-dialog .dialog-top{background:#3c576bf0;color:#ecf7ff}.cinematic-portfolio .project-dialog .dialog-top .eyebrow{color:#c7e4fa}.cinematic-portfolio .case-architecture{background:#a0c8df21;border-color:#d6efff4d}.cinematic-portfolio .original-image{background:#4e6a7d61;border-color:#cee4f04d}.cinematic-portfolio .original-image>span{color:#d3eafa}.cinematic-portfolio .cookie-consent{background:linear-gradient(140deg,#48667cf2,#2b4a62f2)!important;color:#f3faff}.cinematic-portfolio .cookie-consent button{background:#7399b642;color:white!important;border-color:#dbf1ff70}.cinematic-portfolio .cookie-consent button:first-child{background:#22445f;color:white!important}.cinematic-portfolio .scene-bridge{color:#e6f2fc}.cinematic-portfolio .parallel-label{color:#daeaf6}.cinematic-portfolio .glass .step-company-name,.cinematic-portfolio .glass .step-period{color:#f0f8ff!important}.cinematic-portfolio .step-glass-card .step-company-logo[src$="lifepay-logo.svg"],.cinematic-portfolio .timeline-brand>img[src$="lifepay-logo.svg"]{background:#32597280}.cinematic-portfolio .hero>.video-scene,.cinematic-portfolio .career-sticky-scene>.video-scene{z-index:auto;pointer-events:none}.cinematic-portfolio .video-scene>video{position:absolute;inset:0;z-index:-3}.cinematic-portfolio .video-scene .video-control{pointer-events:auto;z-index:8;background:#44687be0;color:#fff;border-color:#e0f5ff75;box-shadow:inset 0 1px 0 #ffffff5c}.cinematic-portfolio .career-sticky-scene .video-control{top:24px;right:24px;bottom:auto}.cinematic-portfolio .video-notice{pointer-events:none;background:#294d65e8;color:white}
-@media(max-width:650px){.cinematic-portfolio .hero-panel,.cinematic-portfolio .step-glass-card{background:linear-gradient(135deg,rgba(55,72,88,.76),rgba(30,51,69,.72))!important}.cinematic-portfolio .workspace-header .workspace-nav{background:linear-gradient(140deg,#5a778eea,#2b4a64f2)!important}.cinematic-portfolio .hero-description{color:#f2f8ff!important}.cinematic-portfolio .career-sticky-scene .video-control{top:19px;right:18px;min-height:38px;font-size:9px}.cinematic-portfolio .career-sticky-scene .video-control span{display:none}.cinematic-portfolio .career-scene-header{max-width:calc(100% - 95px)}}
-@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.cinematic-portfolio .glass{background:#405b71e8!important}}
+/* Approved visual system: optically clear white liquid glass over cinematic media. */
+:root{
+  --lens-ink:#102b3d;
+  --lens-ink-soft:#294657;
+  --lens-line:rgba(255,255,255,.62);
+  --lens-fill:rgba(232,240,245,.19);
+  --lens-fill-strong:rgba(225,235,241,.32);
+  --lens-shadow:rgba(17,35,48,.18);
+}
+
+html{scroll-behavior:smooth;background:#707b84}
+body{background:#707b84;color:var(--lens-ink)}
+.cinematic-portfolio{position:relative;isolation:isolate;min-height:100svh;overflow:clip;color:var(--lens-ink);background:#707b84}
+.cinematic-portfolio::before{content:'';position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(145deg,rgba(222,228,232,.73),rgba(157,170,180,.7)),url('/images/professional-growth-poster.jpg') 50% 50%/cover no-repeat;filter:saturate(.72) contrast(.92)}
+.cinematic-portfolio::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 12% 8%,rgba(255,255,255,.35),transparent 36%),radial-gradient(ellipse at 86% 72%,rgba(81,101,115,.18),transparent 48%)}
+.cinematic-portfolio :is(.career-section,.career-details,.capability-workspace,.portfolio-projects,.portfolio-results,.portfolio-contact){color:var(--lens-ink);background:linear-gradient(145deg,rgba(222,229,233,.54),rgba(181,193,202,.44))!important;border-top:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.26)}
+.cinematic-portfolio :is(.career-details,.capability-workspace,.portfolio-projects,.portfolio-results,.portfolio-contact){backdrop-filter:blur(3px) saturate(108%);-webkit-backdrop-filter:blur(3px) saturate(108%)}
+
+/* The material: a clear lens with bright refractive edges and a quiet moving caustic. */
+.cinematic-portfolio .glass{position:relative;isolation:isolate;overflow:hidden;color:var(--lens-ink)!important;background:linear-gradient(132deg,rgba(255,255,255,.28),rgba(221,232,239,.11) 48%,rgba(255,255,255,.18))!important;border:1px solid var(--lens-line)!important;box-shadow:inset 1px 1px 0 rgba(255,255,255,.84),inset -1px -1px 0 rgba(101,122,136,.24),inset 0 0 28px rgba(255,255,255,.09),0 20px 55px var(--lens-shadow)!important;backdrop-filter:blur(14px) saturate(125%) contrast(102%)!important;-webkit-backdrop-filter:blur(14px) saturate(125%) contrast(102%)!important}
+.cinematic-portfolio .glass::before{content:'';position:absolute;inset:-70% -55%;z-index:0;pointer-events:none;background:linear-gradient(112deg,transparent 43%,rgba(255,255,255,.08) 47%,rgba(255,255,255,.48) 50%,rgba(214,236,248,.13) 53%,transparent 58%);transform:translateX(-36%);animation:lens-caustic 10s cubic-bezier(.4,0,.2,1) infinite}
+.cinematic-portfolio .glass::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:inherit;border-top:1px solid rgba(255,255,255,.88);border-left:1px solid rgba(255,255,255,.42);background:radial-gradient(ellipse at var(--glass-x,18%) var(--glass-y,8%),rgba(255,255,255,.34),transparent 35%),linear-gradient(165deg,rgba(255,255,255,.12),transparent 30%,rgba(140,160,173,.06) 72%,rgba(255,255,255,.13))}
+.cinematic-portfolio .glass>*{position:relative;z-index:1}
+.cinematic-portfolio .glass :is(h1,h2,h3,p,small,li,label,span,a,button){color:inherit!important}
+.cinematic-portfolio .glass :is(p,li,small){text-shadow:0 1px 10px rgba(255,255,255,.52)}
+@keyframes lens-caustic{0%,14%{transform:translateX(-38%);opacity:0}31%{opacity:.72}57%,100%{transform:translateX(38%);opacity:0}}
+
+/* One floating clear-glass navigation capsule. */
+.cinematic-portfolio .workspace-header{position:fixed;top:22px;left:50%;right:auto;width:min(1500px,calc(100% - 48px));max-width:none;transform:translateX(-50%);z-index:100;display:flex;align-items:center;gap:28px;margin:0;padding:9px 12px 9px 22px;border-radius:26px;overflow:visible;background:linear-gradient(120deg,rgba(246,250,252,.26),rgba(204,218,226,.12))!important;backdrop-filter:blur(15px) saturate(130%)!important;-webkit-backdrop-filter:blur(15px) saturate(130%)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.92),inset 0 -1px 0 rgba(104,123,136,.2),0 14px 38px rgba(20,38,51,.16)!important}
+.cinematic-portfolio .workspace-header::before{inset:0;border-radius:26px;animation-duration:12s}
+.cinematic-portfolio .workspace-header::after{border-radius:26px}
+.cinematic-portfolio .site-identity{display:flex;align-items:center;flex-shrink:0;min-height:44px;padding:0 12px;color:var(--lens-ink)!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.cinematic-portfolio .site-identity strong{color:var(--lens-ink)!important;font-size:13px;font-weight:720;line-height:1;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.cinematic-portfolio .workspace-nav{display:flex;align-items:center;justify-content:flex-end;gap:2px;flex:1;margin:0;padding:0;color:var(--lens-ink)!important;background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important}
+.cinematic-portfolio .workspace-nav a{position:relative;min-height:44px;display:flex;align-items:center;padding:0 16px;border-radius:17px;color:var(--lens-ink)!important;font-size:11px;font-weight:580;letter-spacing:.015em;transition:background .3s ease,transform .3s ease}
+.cinematic-portfolio .workspace-nav a::after{content:'';position:absolute;left:16px;right:16px;bottom:7px;height:1px;transform:scaleX(0);transform-origin:left;background:currentColor;opacity:.5;transition:transform .35s ease}
+.cinematic-portfolio .workspace-nav a:hover{background:rgba(255,255,255,.19);transform:translateY(-1px)}
+.cinematic-portfolio .workspace-nav a:hover::after{transform:scaleX(1)}
+.cinematic-portfolio .workspace-menu{display:none;color:var(--lens-ink)!important}
+
+/* Hero: original video, minimal optical overlay, one approved lens. */
+.cinematic-portfolio .hero{position:relative;height:100svh;min-height:780px;max-height:1180px;overflow:hidden;isolation:isolate;background:#aeb8bd}
+.cinematic-portfolio .hero>.video-scene{z-index:-3;pointer-events:none}
+.cinematic-portfolio .hero-video video{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;object-position:18% 50%;transform:scale(1.035);transform-origin:center}
+.cinematic-portfolio .hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(207,216,221,.14),rgba(201,211,216,.04) 48%,transparent 72%),linear-gradient(0deg,rgba(17,31,42,.42),transparent 26%,transparent 82%,rgba(220,228,232,.08))}
+.cinematic-portfolio .hero-light{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at var(--mx,20%) var(--my,48%),rgba(255,255,255,.16),transparent 38%)}
+.cinematic-portfolio .hero-content{position:absolute;inset:0;z-index:3;width:100%;margin:0;padding:118px 6.2% 94px;display:flex;align-items:center;transform:none}
+.cinematic-portfolio .hero-panel{width:min(580px,47vw);padding:clamp(36px,4.2vw,58px);border-radius:38px!important;background:linear-gradient(126deg,rgba(240,246,249,.30),rgba(207,220,228,.15) 60%,rgba(255,255,255,.19))!important;border:1px solid rgba(255,255,255,.69)!important;box-shadow:inset 1px 1px 0 rgba(255,255,255,.98),inset -1px -1px 0 rgba(83,105,120,.28),0 30px 80px rgba(18,34,45,.22)!important;backdrop-filter:blur(11px) saturate(122%)!important;-webkit-backdrop-filter:blur(11px) saturate(122%)!important}
+.cinematic-portfolio .hero-panel::after{border-radius:38px}
+.cinematic-portfolio .hero-content .eyebrow{display:flex;align-items:center;gap:15px;margin:0 0 24px;color:#1f435a!important;font-size:9px;font-weight:680;line-height:1.6;letter-spacing:.13em}
+.cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{margin:0;color:#0c293b!important;font-size:clamp(66px,6.2vw,98px);font-weight:460;line-height:.96;letter-spacing:-.075em;text-shadow:0 1px 16px rgba(255,255,255,.26)}
+.cinematic-portfolio .hero-position{margin:26px 0 0;color:#17374c!important;font-size:clamp(12px,1.05vw,15px);font-weight:650;line-height:1.85;letter-spacing:-.02em}
+.cinematic-portfolio .hero-position>span:not(.position-last){color:#5e7788!important;font-size:9px;margin-inline:4px}
+.cinematic-portfolio .hero-position .position-last{color:#203f53!important;font-weight:480}
+.cinematic-portfolio .hero-description{max-width:360px;margin:16px 0 24px;color:#27495d!important;font-size:13px;font-weight:500;line-height:1.8}
+.cinematic-portfolio .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.cinematic-portfolio .hero-actions .button,.cinematic-portfolio .hero-actions .resume-link{min-height:52px;padding:0 20px;font-size:11px}
+.cinematic-portfolio .hero-actions .button.dark{color:white!important;background:linear-gradient(130deg,rgba(32,48,60,.88),rgba(18,32,43,.82))!important;border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 24px rgba(16,31,42,.22)}
+.cinematic-portfolio .hero-actions .button.dark :is(svg,span){color:white!important}
+.cinematic-portfolio .hero-actions .resume-link{color:#17374b!important;background:linear-gradient(130deg,rgba(255,255,255,.27),rgba(219,230,236,.15))!important;border-color:rgba(255,255,255,.66)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 8px 22px rgba(19,38,51,.12)!important}
+.cinematic-portfolio .hero-foot{position:absolute;left:6.2%;right:5%;bottom:27px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#f8fbfd;font-size:10px;font-weight:570;letter-spacing:.12em;text-shadow:0 2px 14px rgba(7,20,29,.72)}
+.cinematic-portfolio .hero-foot a{color:#f8fbfd!important}
+.cinematic-portfolio .scroll-line{background:rgba(255,255,255,.62)}
+.cinematic-portfolio .video-scene .video-control{pointer-events:auto;z-index:8;min-width:42px;min-height:42px;padding:0 13px;color:#122d3f;background:linear-gradient(130deg,rgba(245,249,251,.42),rgba(206,220,228,.19));border:1px solid rgba(255,255,255,.62);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 8px 25px rgba(15,32,44,.18);backdrop-filter:blur(13px) saturate(125%)}
+.cinematic-portfolio .hero .video-control{right:5%;bottom:70px}
+.cinematic-portfolio .video-notice{background:rgba(27,45,58,.78);color:white}
+
+/* Bridge and staircase scene. */
+.cinematic-portfolio .scene-bridge{min-height:88px;padding:24px 20px;color:#203d50;background:linear-gradient(120deg,rgba(223,231,236,.64),rgba(179,192,201,.52))!important;border-block:1px solid rgba(255,255,255,.32);backdrop-filter:blur(9px)}
+.cinematic-portfolio .career-scroll-story{background:#72808a}
+.cinematic-portfolio .career-sticky-scene>.video-scene{z-index:-3;pointer-events:none}
+.cinematic-portfolio .career-sticky-scene .video-scene video{z-index:-3}
+.cinematic-portfolio .career-scene-shade{background:linear-gradient(180deg,rgba(15,33,45,.53),transparent 38%,rgba(20,40,53,.06) 66%,rgba(13,29,40,.46))}
+.cinematic-portfolio .career-scene-header{color:white;text-shadow:0 2px 18px rgba(5,21,32,.62)}
+.cinematic-portfolio .career-scene-header :is(.eyebrow,h2,p){color:white!important}
+.cinematic-portfolio .step-glass-card{color:#112f43!important;border-radius:28px;background:linear-gradient(130deg,rgba(239,246,249,.31),rgba(207,222,231,.17))!important;border-color:rgba(255,255,255,.66)!important;backdrop-filter:blur(14px) saturate(126%)!important;-webkit-backdrop-filter:blur(14px) saturate(126%)!important;box-shadow:inset 1px 1px 0 rgba(255,255,255,.9),inset -1px -1px 0 rgba(81,106,122,.24),0 24px 65px rgba(10,27,38,.25)!important}
+.cinematic-portfolio .step-glass-card :is(.step-company-name,.step-period,h3,p,.text-link){color:#112f43!important;text-shadow:0 1px 10px rgba(255,255,255,.68)}
+.cinematic-portfolio .step-glass-card .step-period{color:#33566b!important}
+.cinematic-portfolio .step-glass-card .step-company-logo[src$="lifepay-logo.svg"],.cinematic-portfolio .timeline-brand>img[src$="lifepay-logo.svg"]{background:#2a4658;border-radius:7px;padding:5px 8px;box-sizing:content-box}
+.cinematic-portfolio .parallel-stage-label,.cinematic-portfolio .career-step-navigation button,.cinematic-portfolio .career-scroll-caption{color:white;text-shadow:0 2px 11px rgba(5,21,32,.7)}
+.cinematic-portfolio .career-sticky-scene .video-control{top:26px;right:26px;bottom:auto}
+
+/* Shared editorial typography outside the video scenes. */
+.cinematic-portfolio :is(.career-heading,.section-heading,.capability-heading,.project-summary-row,.company-results,.armada-result,.directions,.contact-main,.offer-panel,.workspace-footer){color:var(--lens-ink)}
+.cinematic-portfolio :is(.career-heading,.section-heading,.capability-heading,.project-summary-row,.company-results,.armada-result,.directions,.contact-main,.offer-panel,.workspace-footer) :is(h1,h2,h3,p,span,small,a,button){color:inherit}
+.cinematic-portfolio .eyebrow{color:#294c62!important;font-weight:680}
+.cinematic-portfolio .serif{color:#2e5167!important;font-family:Manrope,Arial,sans-serif;font-style:normal;font-weight:420;letter-spacing:-.045em}
+.cinematic-portfolio .muted{color:#456174!important}
+.cinematic-portfolio :is(.section-heading,.career-heading,.capability-heading) h2{color:#102d40!important;font-weight:500}
+.cinematic-portfolio :is(.section-heading,.career-heading,.capability-heading)>p{color:#294a5f!important}
+
+/* Career details. */
+.cinematic-portfolio .timeline-item{color:#153247!important;background:linear-gradient(132deg,rgba(247,250,252,.23),rgba(204,218,227,.13))!important;border-color:rgba(255,255,255,.45)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.66),0 10px 32px rgba(20,39,52,.1)!important}
+.cinematic-portfolio .timeline-item.is-open{background:linear-gradient(132deg,rgba(247,251,252,.35),rgba(208,222,230,.2))!important}
+.cinematic-portfolio .timeline-item :is(.timeline-index,.timeline-name,.timeline-detail h3,.timeline-detail li,.timeline-result p){color:#17364a!important}
+.cinematic-portfolio .timeline-name small{color:#466376!important}
+.cinematic-portfolio .skill-tags span,.cinematic-portfolio .project-tech-tags span{color:#24485f!important;background:rgba(237,244,248,.18)!important;border-color:rgba(255,255,255,.48)!important}
+
+/* Skills: one glass workspace, clear tool tiles, original brand marks. */
+.cinematic-portfolio .capability-workspace{padding-top:86px}
+.cinematic-portfolio .capability-heading{padding-right:0;max-width:900px}
+.cinematic-portfolio .capability-heading h2{font-size:clamp(46px,4.6vw,68px)}
+.cinematic-portfolio .capability-heading h2 span{color:#507187!important}
+.cinematic-portfolio .capability-shell{border-radius:34px;background:linear-gradient(132deg,rgba(244,249,251,.22),rgba(191,207,217,.12))!important;border-color:rgba(255,255,255,.58)!important}
+.cinematic-portfolio .capability-categories{background:linear-gradient(170deg,rgba(255,255,255,.12),rgba(166,184,197,.11));border-color:rgba(255,255,255,.28)}
+.cinematic-portfolio .capability-categories button{color:#24475d!important;border-color:transparent;background:transparent}
+.cinematic-portfolio .capability-categories button>span{color:#577286!important}
+.cinematic-portfolio .capability-categories button[aria-pressed=true]{color:#102e42!important;background:linear-gradient(130deg,rgba(255,255,255,.31),rgba(218,229,236,.14))!important;border-color:rgba(255,255,255,.52);box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 8px 24px rgba(23,43,57,.1)}
+.cinematic-portfolio .capability-summary :is(h2,p,li){color:#17364a!important}
+.cinematic-portfolio .capability-summary li svg{color:#315d75}
+.cinematic-portfolio .tools-label{color:#2e536a}
+.cinematic-portfolio .tool-button{color:#17374c!important;background:linear-gradient(140deg,rgba(249,252,253,.22),rgba(195,211,221,.12))!important;border-color:rgba(255,255,255,.44)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.62),0 9px 24px rgba(20,39,52,.09)!important;transition:transform .36s cubic-bezier(.22,1,.36,1),background .3s,border-color .3s,box-shadow .3s}
+.cinematic-portfolio .tool-button:hover{transform:translateY(-5px) perspective(700px) rotateX(2deg);background:linear-gradient(140deg,rgba(255,255,255,.34),rgba(205,219,228,.17))!important}
+.cinematic-portfolio .tool-button.selected{background:linear-gradient(140deg,rgba(255,255,255,.43),rgba(205,222,232,.22))!important;border-color:rgba(255,255,255,.82)!important;box-shadow:inset 0 1px 0 #fff,0 14px 32px rgba(22,43,57,.14)!important}
+.cinematic-portfolio .technology-mark{color:#244d68!important;background:linear-gradient(145deg,rgba(255,255,255,.58),rgba(200,216,226,.26))!important;border-color:rgba(255,255,255,.72)!important;box-shadow:inset 1px 2px 2px rgba(255,255,255,.9),inset -2px -3px 8px rgba(74,102,121,.18),0 10px 22px rgba(29,51,66,.13)!important}
+.cinematic-portfolio .technology-mark>svg{color:#244d68!important}
+.cinematic-portfolio .tool-detail{color:#17374b!important;background:linear-gradient(130deg,rgba(249,252,253,.24),rgba(196,212,221,.12))!important;border-color:rgba(255,255,255,.48)!important}
+.cinematic-portfolio .tool-detail :is(h3,p,small){color:#17374b!important}
+.cinematic-portfolio .capability-bottom :is(p,a){color:#254a61!important}
+
+/* Projects: original screenshots float inside a clear optical frame. */
+.cinematic-portfolio .portfolio-projects{padding-top:105px}
+.cinematic-portfolio .project-tabs{border-color:rgba(255,255,255,.36)}
+.cinematic-portfolio .project-tabs button{color:#35566b}
+.cinematic-portfolio .project-tabs .selected{color:#0f2d40}
+.cinematic-portfolio .project-tabs .selected::after{background:#294e64}
+.cinematic-portfolio .project-stage{border-radius:32px;background:linear-gradient(132deg,rgba(248,251,252,.23),rgba(193,208,218,.12))!important;border-color:rgba(255,255,255,.58)!important}
+.cinematic-portfolio .stage-label{color:#24485e}
+.cinematic-portfolio .case-image{background:rgba(80,99,112,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.cinematic-portfolio .case-image-fn{background:radial-gradient(ellipse at 50% 40%,rgba(231,239,244,.52),rgba(118,136,149,.24))}
+.cinematic-portfolio .image-inspect{color:#17364a!important;background:rgba(232,241,246,.5)!important}
+.cinematic-portfolio .project-summary-row :is(h3,p){color:#17354a!important}
+.cinematic-portfolio .case-demo,.cinematic-portfolio .project-summary-row .text-link{color:#173c54}
+
+/* Results and contact use the same glass, not white slabs. */
+.cinematic-portfolio .company-results{padding:30px 34px 12px;border:1px solid rgba(255,255,255,.42);border-radius:30px;background:linear-gradient(132deg,rgba(246,250,252,.18),rgba(193,208,217,.09));box-shadow:inset 0 1px 0 rgba(255,255,255,.57),0 16px 45px rgba(25,44,57,.1);backdrop-filter:blur(10px)}
+.cinematic-portfolio .result-company-label{color:#17364a;border-color:rgba(255,255,255,.37)}
+.cinematic-portfolio .result-company-label>span:last-child{color:#3c5c70}
+.cinematic-portfolio .metric{border-color:rgba(255,255,255,.34)}
+.cinematic-portfolio .metric :is(.metric-value,h3,p){color:#17364a}
+.cinematic-portfolio .armada-result{margin-top:24px;border-radius:30px;background:linear-gradient(132deg,rgba(248,251,252,.22),rgba(190,206,216,.1))!important;border-color:rgba(255,255,255,.54)!important}
+.cinematic-portfolio .armada-result :is(h3,p,.metric-value,.armada-number>span){color:#17364a!important}
+.cinematic-portfolio .directions{padding:30px;border:1px solid rgba(255,255,255,.38);border-radius:28px;background:linear-gradient(132deg,rgba(247,250,252,.17),rgba(190,206,215,.08));box-shadow:inset 0 1px 0 rgba(255,255,255,.54),0 14px 40px rgba(22,41,54,.09);backdrop-filter:blur(9px)}
+.cinematic-portfolio .directions :is(h3,p,span){color:#17364a}
+.cinematic-portfolio .contact-copy :is(h2,p,a){color:#153449!important}
+.cinematic-portfolio .contact-copy .button.dark,.cinematic-portfolio .project-dialog .button.dark,.cinematic-portfolio .offer-form .button.dark{color:white!important;background:linear-gradient(130deg,#283e4d,#152b3b)!important;border-color:rgba(255,255,255,.26)}
+.cinematic-portfolio .contact-copy .button.dark :is(svg,span),.cinematic-portfolio .offer-form .button.dark :is(svg,span){color:white!important}
+.cinematic-portfolio .contact-copy .resume-link{color:#17374b!important;background:rgba(236,243,247,.2)!important}
+.cinematic-portfolio .contact-links a{color:#173c53!important}
+.cinematic-portfolio .contact-signature,.cinematic-portfolio .offer-panel{color:#16354a!important;background:linear-gradient(132deg,rgba(248,251,252,.21),rgba(190,206,216,.1))!important;border-color:rgba(255,255,255,.52)!important}
+.cinematic-portfolio .contact-signature :is(p,strong,span),.cinematic-portfolio .offer-panel :is(h3,p,label,span,a){color:#16354a!important}
+.cinematic-portfolio .offer-form :is(input:not([type=checkbox]),select,textarea){color:#17364a;background:rgba(241,246,249,.28);border-color:rgba(255,255,255,.52);box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
+.cinematic-portfolio .offer-form input::placeholder{color:#506b7d}
+.cinematic-portfolio .offer-form option{color:#17364a;background:#dce5ea}
+.cinematic-portfolio .form-unavailable{background:rgba(213,226,234,.22);border-color:rgba(255,255,255,.42)}
+
+/* Dialogs and privacy layer. */
+.cinematic-portfolio .project-dialog,.cinematic-portfolio .tech-dialog{color:#17364a;background:linear-gradient(135deg,rgba(226,235,240,.95),rgba(184,199,209,.93));border-color:rgba(255,255,255,.68);box-shadow:inset 0 1px 0 white,0 35px 120px rgba(9,25,36,.52)}
+.cinematic-portfolio .project-dialog :is(h2,h3,p,li),.cinematic-portfolio .tech-dialog :is(h2,h3,p){color:#17364a!important}
+.cinematic-portfolio .project-dialog .dialog-top{color:#17364a;background:rgba(218,229,235,.86)}
+.cinematic-portfolio .case-architecture{background:rgba(224,233,238,.31);border-color:rgba(255,255,255,.48)}
+.cinematic-portfolio .original-image{background:rgba(89,108,121,.15);border-color:rgba(255,255,255,.44)}
+.cinematic-portfolio .cookie-consent{color:#16354a;background:linear-gradient(135deg,rgba(227,236,241,.94),rgba(185,201,211,.93))!important;border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 1px 0 white,0 24px 80px rgba(13,29,40,.36);backdrop-filter:blur(20px)}
+.cinematic-portfolio .cookie-consent :is(h2,p){color:#16354a}
+.cinematic-portfolio .cookie-consent button{color:#17364a!important;background:rgba(240,245,248,.32);border-color:rgba(255,255,255,.55)}
+.cinematic-portfolio .cookie-consent button:first-child{color:white!important;background:#1d3545}
+.cinematic-portfolio .workspace-footer{border-color:rgba(255,255,255,.34);color:#17384e}
+.cinematic-portfolio .privacy-settings{color:#17384e}
+.cinematic-portfolio section{scroll-margin-top:88px}
+
+@media(max-width:1100px){
+  .cinematic-portfolio .workspace-header{width:calc(100% - 36px);top:18px;gap:14px;padding-left:15px}
+  .cinematic-portfolio .workspace-nav a{padding-inline:10px;font-size:10px}
+  .cinematic-portfolio .hero-content{padding-left:4.2%}
+  .cinematic-portfolio .hero-panel{width:min(540px,52vw)}
+  .cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{font-size:72px}
+}
+
+@media(max-width:800px) and (min-width:651px){
+  .cinematic-portfolio .site-identity strong{font-size:11px;letter-spacing:.07em}
+  .cinematic-portfolio .workspace-nav a{padding-inline:8px;font-size:9px}
+  .cinematic-portfolio .hero-panel{width:57vw;padding:32px}
+  .cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{font-size:64px}
+}
+
+@media(max-width:650px){
+  html{scroll-behavior:auto}
+  .cinematic-portfolio::before{background:linear-gradient(150deg,rgba(218,225,229,.75),rgba(146,160,170,.73)),url('/images/professional-growth-poster.jpg') 48% 50%/cover no-repeat}
+  .cinematic-portfolio .workspace-header{top:14px;width:calc(100% - 28px);min-height:58px;padding:7px 8px 7px 14px;gap:8px;border-radius:22px}
+  .cinematic-portfolio .workspace-header::before,.cinematic-portfolio .workspace-header::after{border-radius:22px}
+  .cinematic-portfolio .site-identity{min-height:42px;padding:0 6px}
+  .cinematic-portfolio .site-identity strong{font-size:11px;letter-spacing:.08em}
+  .cinematic-portfolio .workspace-menu{display:flex;min-width:42px;min-height:42px;margin-left:auto;color:#132f42!important;background:rgba(244,248,250,.2)!important;border:1px solid rgba(255,255,255,.53)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.68);backdrop-filter:blur(9px)}
+  .cinematic-portfolio .workspace-nav{display:none;position:absolute;top:68px;left:0;right:0;width:auto;padding:10px;grid-template-columns:1fr 1fr;gap:5px;border-radius:22px;background:linear-gradient(135deg,rgba(226,236,241,.93),rgba(181,198,208,.91))!important;border:1px solid rgba(255,255,255,.7)!important;box-shadow:inset 0 1px 0 white,0 20px 55px rgba(13,31,43,.32)!important;backdrop-filter:blur(20px)!important}
+  .cinematic-portfolio .workspace-nav.is-open{display:grid}
+  .cinematic-portfolio .workspace-nav a{min-height:46px;padding:0 13px;font-size:11px;border-radius:14px}
+  .cinematic-portfolio .hero{height:100svh;min-height:760px;max-height:980px}
+  .cinematic-portfolio .hero-video video{object-position:50% 50%;transform:scale(1.01)}
+  .cinematic-portfolio .hero-shade{background:linear-gradient(0deg,rgba(13,28,39,.5),transparent 25%,transparent 84%,rgba(221,229,233,.06))}
+  .cinematic-portfolio .hero-content{inset:auto 0 58px;width:100%;padding:0 16px;display:block}
+  .cinematic-portfolio .hero-panel{width:100%;padding:24px;border-radius:30px!important;background:linear-gradient(128deg,rgba(240,246,249,.28),rgba(198,213,222,.13))!important;backdrop-filter:blur(10px) saturate(120%)!important;-webkit-backdrop-filter:blur(10px) saturate(120%)!important}
+  .cinematic-portfolio .hero-panel::after{border-radius:30px}
+  .cinematic-portfolio .hero-content .eyebrow{font-size:7px;gap:10px;margin-bottom:17px;letter-spacing:.11em}
+  .cinematic-portfolio .hero-content .tiny-line{width:22px}
+  .cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{font-size:clamp(47px,14vw,58px);line-height:.98}
+  .cinematic-portfolio .hero-position{font-size:11px;line-height:1.75;margin-top:18px}
+  .cinematic-portfolio .hero-description{font-size:11px;line-height:1.7;margin:10px 0 17px}
+  .cinematic-portfolio .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .cinematic-portfolio .hero-actions .button,.cinematic-portfolio .hero-actions .resume-link{min-height:47px;padding:0 13px;gap:8px;font-size:10px;white-space:nowrap}
+  .cinematic-portfolio .hero-actions .resume-link small{display:none}
+  .cinematic-portfolio .hero-foot{left:20px;right:20px;bottom:18px;font-size:8px;letter-spacing:.08em}
+  .cinematic-portfolio .hero-foot>span:first-child{display:none}
+  .cinematic-portfolio .scroll-hint{gap:9px;font-size:7px}
+  .cinematic-portfolio .scroll-line{display:none}
+  .cinematic-portfolio .hero .video-control{right:18px;bottom:auto;top:86px;min-width:40px;min-height:40px;padding:0}
+  .cinematic-portfolio .hero .video-control span{display:none}
+  .cinematic-portfolio .scene-bridge{min-height:72px;padding:20px 18px;font-size:7px;text-align:center}
+  .cinematic-portfolio .career-scene-header{top:12%;left:18px;right:18px;max-width:calc(100% - 94px)}
+  .cinematic-portfolio .career-scene-header h2{font-size:34px}
+  .cinematic-portfolio .career-scene-header>p{font-size:10px}
+  .cinematic-portfolio .career-stage-stack{left:16px;right:16px;bottom:104px}
+  .cinematic-portfolio .step-glass-card{padding:21px;border-radius:24px}
+  .cinematic-portfolio .step-glass-card h3{font-size:21px}
+  .cinematic-portfolio .career-sticky-scene .video-control{top:82px;right:17px}
+  .cinematic-portfolio .career-details{padding-block:58px 68px}
+  .cinematic-portfolio .capability-workspace{padding-top:58px}
+  .cinematic-portfolio .capability-heading h2{font-size:38px}
+  .cinematic-portfolio .capability-shell{border-radius:26px}
+  .cinematic-portfolio .capability-categories{background:rgba(217,228,234,.12)}
+  .cinematic-portfolio .capability-categories button{font-size:10px}
+  .cinematic-portfolio .capability-content{padding:22px 17px}
+  .cinematic-portfolio .tool-button{min-height:137px}
+  .cinematic-portfolio .portfolio-projects{padding-top:74px}
+  .cinematic-portfolio .project-stage{border-radius:25px;padding:13px}
+  .cinematic-portfolio .company-results{padding:24px 19px 8px;border-radius:25px}
+  .cinematic-portfolio .directions{padding:22px 19px;border-radius:24px}
+  .cinematic-portfolio .armada-result,.cinematic-portfolio .contact-signature,.cinematic-portfolio .offer-panel{border-radius:25px}
+  .cinematic-portfolio .workspace-footer{color:#17384e}
+}
+
+@media(max-width:390px){
+  .cinematic-portfolio .hero-content{padding-inline:12px}
+  .cinematic-portfolio .hero-panel{padding:21px}
+  .cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{font-size:47px}
+  .cinematic-portfolio .hero-position{font-size:10px}
+  .cinematic-portfolio .hero-actions .button,.cinematic-portfolio .hero-actions .resume-link{font-size:9px;padding-inline:10px}
+  .cinematic-portfolio .site-identity strong{font-size:10px}
+}
+
+@media(max-height:760px) and (max-width:650px){
+  .cinematic-portfolio .hero{min-height:700px}
+  .cinematic-portfolio .hero-content{bottom:49px}
+  .cinematic-portfolio .hero-panel{padding:19px 21px}
+  .cinematic-portfolio .hero-content .eyebrow{margin-bottom:12px}
+  .cinematic-portfolio .hero h1,.cinematic-portfolio .hero h1 span{font-size:45px}
+  .cinematic-portfolio .hero-position{margin-top:13px;line-height:1.65}
+  .cinematic-portfolio .hero-description{margin-block:7px 13px}
+  .cinematic-portfolio .hero-actions .button,.cinematic-portfolio .hero-actions .resume-link{min-height:43px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .cinematic-portfolio .glass::before{animation:none;opacity:0}
+  .cinematic-portfolio :is(.glass,.tool-button,.button,.resume-link){transition:none!important;transform:none!important}
+}
+
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .cinematic-portfolio .glass{background:rgba(214,224,230,.88)!important}
+  .cinematic-portfolio .workspace-nav.is-open{background:rgba(214,224,230,.97)!important}
+}
