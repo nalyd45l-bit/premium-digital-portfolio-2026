@@ -1,4 +1,5 @@
 import {useEffect,useRef,useState} from 'react';
+import {assetUrl} from '../lib/assetUrl';
 type Props={name:'introduction'|'professional-growth';className?:string;label:string;scrub?:boolean};
 export function VideoScene({name,className='',label,scrub=false}:Props){
  const ref=useRef<HTMLVideoElement>(null);
@@ -22,7 +23,7 @@ export function VideoScene({name,className='',label,scrub=false}:Props){
   return()=>{observer.disconnect();video.pause();document.removeEventListener('visibilitychange',sync);motion.removeEventListener('change',sync)};
  },[scrub]);
  return <div className={`video-scene ${className}`}>
-  <video ref={ref} loop muted playsInline preload={name==='introduction'?'metadata':'none'} poster={`/images/${name}-poster.jpg`} onPlay={()=>setFailed(false)} onError={()=>setFailed(true)} aria-label={label}><source src={`/videos/${name}.mp4`} type="video/mp4"/></video>
+  <video ref={ref} loop muted playsInline preload={name==='introduction'?'metadata':'none'} poster={assetUrl(`/images/${name}-poster.jpg`)} onPlay={()=>setFailed(false)} onError={()=>setFailed(true)} aria-label={label}><source src={assetUrl(`/videos/${name}.mp4`)} type="video/mp4"/></video>
   {failed&&<p className="video-notice" role="status">Видео не загрузилось. Показан постер.</p>}
  </div>;
 }
