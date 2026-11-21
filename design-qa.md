@@ -12,6 +12,7 @@
 - Desktop viewport: 1440 × 900, passed.
 - Wide desktop viewport: 1835 × 743, passed; лицо не обрезается.
 - Mobile viewport: 390 × 844, passed.
+- Additional responsive viewports: 360 × 800, 768 × 1024, 1024 × 900, passed.
 - Горизонтальная прокрутка: отсутствует на desktop и mobile.
 - Ошибки JavaScript в консоли: отсутствуют.
 - Первый и второй исходные MP4 подключены без изменения видеоряда.
@@ -22,6 +23,11 @@
 - При `prefers-reduced-motion: reduce` автоматический режим выключен, видео остановлено, ручной выбор остаётся доступен.
 - Локальные пути видео, изображений, иконок и PDF учитывают base GitHub Pages.
 - Панели опыта, навыков, проектов, результатов и контактов используют единый прозрачный стеклянный материал.
+- Header, hero и вложенные панели используют слабую прозрачную заливку и единую бело-серебряную оптическую кромку; фон остаётся видимым на desktop и mobile.
+- Раздел навыков на 1024/1440 повторяет утверждённую структуру: категории слева, польза для бизнеса по центру, инструменты справа.
+- На 360/390 сначала показана рабочая польза, затем инструменты; категории расположены в двух читаемых колонках без переноса внутри слов.
+- Переключение категорий и инструментов проверено: «Аналитика → Программирование» и «Excel → Python» обновляют описания и контекст применения.
+- Реальные иконки Excel, Google Sheets, Python, HTML, CSS, JavaScript и Google Apps Script отображаются корректно.
 - Блок «Обо мне» содержит только утверждённый заголовок; добавлен единый блок реальных задач.
 - Лишний промежуточный баннер скрыт.
 - `prefers-reduced-motion` и Save-Data учитываются видеокомпонентом.
@@ -34,5 +40,7 @@
 - Mobile hero: `/tmp/mobile-final.png`
 - Mobile content: `/tmp/about-mobile.png`, `/tmp/mobile-career-play.png`
 - Updated career scene: `/tmp/career-mobile-check.png`, `/tmp/career-desktop-final.png`
+- Updated optical glass: `/tmp/hero-m-v4.png`, `/tmp/hero-d-v2.png`
+- Updated skills: `/tmp/skills-390-v3.png`, `/tmp/skills-768-v3.png`, `/tmp/skills-1024-v3.png`, `/tmp/skills-d-v2.png`
 
 **final result: passed**

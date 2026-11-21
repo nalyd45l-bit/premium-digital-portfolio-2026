@@ -1,4 +1,113 @@
-import {useEffect,useRef,useState} from 'react';import {Check,ArrowUpRight} from 'lucide-react';import {skillGroups} from '../content/skills';import {capabilities} from '../content/capabilities';import {TechnologyMark} from '../components/TechnologyMark';
-export function Skills(){const [groupId,setGroupId]=useState('analytics');const [selected,setSelected]=useState('Excel');const detail=useRef<HTMLDivElement>(null);const group=skillGroups.find(g=>g.id===groupId)!;const technology=group.items.find(t=>t.name===selected)||group.items[0];const capability=capabilities[groupId as keyof typeof capabilities];
-useEffect(()=>{setSelected(group.items[0].name)},[groupId]);
-return <section id="skills" className="capability-workspace"><div className="wrap"><div className="capability-heading"><span className="eyebrow">ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</span><h2>Навыки и инструменты<span>.</span></h2><p>Excel и Google Таблицы, аналитика, программирование и логистика. Выберите направление, чтобы увидеть конкретные задачи.</p></div><div className="capability-shell glass"><nav className="capability-categories" aria-label="Направления навыков">{skillGroups.map(g=><button key={g.id} aria-pressed={groupId===g.id} onClick={()=>setGroupId(g.id)}>{g.title}<span>{g.items.length}</span></button>)}</nav><div className="capability-content"><div className="capability-summary"><span className="eyebrow">{group.title}</span><h2>{capability.title}</h2><p>{capability.description}</p><ul>{capability.tasks.map(t=><li key={t}><Check size={15}/>{t}</li>)}</ul></div><div className="capability-tools"><span className="tools-label">ИНСТРУМЕНТЫ И КОМПЕТЕНЦИИ</span><div className="tool-grid">{group.items.map(t=><button className={technology.name===t.name?'tool-button selected':'tool-button'} key={t.name} aria-pressed={technology.name===t.name} onClick={()=>{setSelected(t.name);if(matchMedia('(max-width:650px)').matches)requestAnimationFrame(()=>detail.current?.scrollIntoView({behavior:'auto',block:'nearest'}))}}><TechnologyMark technology={t}/><span>{t.name}</span><ArrowUpRight size={13}/></button>)}</div><div className="tool-detail glass" ref={detail} aria-live="polite"><TechnologyMark technology={technology}/><div><h3>{technology.name}</h3><p>{technology.description}</p></div></div></div></div></div><div className="capability-bottom"><p>Выберите инструмент, чтобы узнать, как я его применяю.</p><a href="#projects">Посмотреть реальные проекты<ArrowUpRight size={16}/></a></div></div></section>}
+import { useEffect, useState } from 'react';
+import { ArrowUpRight, BriefcaseBusiness, Check } from 'lucide-react';
+import { TechnologyMark } from '../components/TechnologyMark';
+import { capabilities, technologyContexts } from '../content/capabilities';
+import { skillGroups } from '../content/skills';
+
+export function Skills() {
+  const [groupId, setGroupId] = useState('analytics');
+  const [selected, setSelected] = useState('Excel');
+  const group = skillGroups.find((item) => item.id === groupId)!;
+  const technology = group.items.find((item) => item.name === selected) || group.items[0];
+  const capability = capabilities[groupId];
+  const context = technologyContexts[technology.name] || capability.proof;
+
+  useEffect(() => {
+    setSelected(group.items[0].name);
+  }, [group]);
+
+  return (
+    <section id="skills" className="capability-workspace" aria-labelledby="skills-title">
+      <div className="wrap">
+        <header className="capability-heading">
+          <span className="eyebrow" id="skills-title">
+            <span className="tiny-line" />
+            НАВЫКИ И ТЕХНОЛОГИИ
+          </span>
+        </header>
+
+        <div className="capability-shell glass">
+          <nav className="capability-categories" aria-label="Направления навыков">
+            {skillGroups.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                aria-pressed={groupId === item.id}
+                onClick={() => setGroupId(item.id)}
+              >
+                {item.title}
+                <span>{item.items.length}</span>
+              </button>
+            ))}
+          </nav>
+
+          <div className="capability-content">
+            <article className="capability-summary">
+              <span className="eyebrow">{group.title}</span>
+              <h2>{capability.title}</h2>
+              <p>{capability.description}</p>
+              <ul>
+                {capability.tasks.map((task) => (
+                  <li key={task}>
+                    <Check size={15} />
+                    {task}
+                  </li>
+                ))}
+              </ul>
+              <p className="capability-proof">
+                <BriefcaseBusiness size={15} />
+                <span>
+                  <strong>Подтверждено опытом</strong>
+                  {capability.proof}
+                </span>
+              </p>
+            </article>
+
+            <div className="capability-tools">
+              <span className="tools-label">ЧЕМ РЕШАЮ ЗАДАЧИ</span>
+              <div className="tool-grid">
+                {group.items.map((item) => (
+                  <button
+                    className={technology.name === item.name ? 'tool-button selected' : 'tool-button'}
+                    key={item.name}
+                    type="button"
+                    aria-pressed={technology.name === item.name}
+                    onClick={() => setSelected(item.name)}
+                  >
+                    <TechnologyMark technology={item} />
+                    <span>{item.name}</span>
+                    <ArrowUpRight size={13} />
+                  </button>
+                ))}
+              </div>
+
+              <div className="tool-detail glass" aria-live="polite">
+                <TechnologyMark technology={technology} />
+                <div className="tool-detail-copy">
+                  <span className="tool-detail-kicker">КАК ПРИМЕНЯЮ</span>
+                  <h3>{technology.name}</h3>
+                  <p>{technology.description}</p>
+                  <small>
+                    <BriefcaseBusiness size={13} />
+                    <span>
+                      <strong>Контекст применения</strong>
+                      {context}
+                    </span>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="capability-bottom">
+          <p>Выберите направление и инструмент, чтобы увидеть реальные рабочие задачи.</p>
+          <a href="#projects">
+            Посмотреть реальные проекты
+            <ArrowUpRight size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
