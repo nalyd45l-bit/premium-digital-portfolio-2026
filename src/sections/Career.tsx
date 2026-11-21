@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {ArrowUpRight,Minus,Plus} from 'lucide-react';
+import {useEffect,useRef,useState,type SyntheticEvent} from 'react';
+import {ArrowUpRight,Minus,Pause,Play,Plus} from 'lucide-react';
 import {VideoScene} from '../components/VideoScene';
 import {career,type CareerEntry} from '../content/career';
 import {assetUrl} from '../lib/assetUrl';
@@ -8,7 +8,29 @@ const stages=[...career.slice(0,4).map(c=>[c]),career.filter(c=>c.parallel)];
 
 export function Career(){
   const [active,setActive]=useState(0);
+  const [autoPlay,setAutoPlay]=useState(()=>typeof window==='undefined'||!window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [expanded,setExpanded]=useState<string|null>(null);
+  const videoRef=useRef<HTMLVideoElement>(null);
+  useEffect(()=>{
+    const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const sync=()=>{if(motion.matches)setAutoPlay(false)};
+    motion.addEventListener('change',sync);
+    return()=>motion.removeEventListener('change',sync);
+  },[]);
+  const selectStage=(index:number)=>{
+    setActive(index);
+    const video=videoRef.current;
+    if(!video)return;
+    const duration=Number.isFinite(video.duration)&&video.duration>0?video.duration:10;
+    video.currentTime=Math.min(duration-.08,(duration/stages.length)*index+.04);
+  };
+  const syncStage=(event:SyntheticEvent<HTMLVideoElement>)=>{
+    if(!autoPlay)return;
+    const video=event.currentTarget;
+    if(!Number.isFinite(video.duration)||video.duration<=0)return;
+    const next=Math.min(stages.length-1,Math.floor((video.currentTime/video.duration)*stages.length));
+    setActive(current=>current===next?current:next);
+  };
   const open=(entry:CareerEntry)=>{
     setExpanded(entry.id);
     requestAnimationFrame(()=>document.getElementById(`career-${entry.id}`)?.scrollIntoView({behavior:'auto',block:'center'}));
@@ -30,15 +52,17 @@ export function Career(){
 
   return <section id="career" className="career-section">
     <div className="career-scroll-story"><div className="career-sticky-scene">
-      <VideoScene name="professional-growth" label="Стеклянная лестница — видео профессионального роста"/>
-      <div className="career-scene-shade"/>
-      <div className="career-scene-header"><span className="eyebrow">ПРОФЕССИОНАЛЬНЫЙ ПУТЬ</span><h2>Опыт по этапам.</h2></div>
-      <div className="career-stage-stack"><div className={`career-stage-panel ${entries.length>1?'parallel-stage':''}`}>
+      <div className="career-video-shell"><VideoScene ref={videoRef} name="professional-growth" label="Стеклянная лестница — видео профессионального роста" playbackEnabled={autoPlay} onTimeUpdate={syncStage}/>
+        <div className="career-scene-shade"/>
+        <div className="career-scene-header"><span className="eyebrow">ПРОФЕССИОНАЛЬНЫЙ ПУТЬ</span><h2>Опыт по этапам.</h2></div>
+      </div>
+      <div className="career-stage-stack" aria-live="polite"><div key={entries.map(entry=>entry.id).join('-')} className={`career-stage-panel ${entries.length>1?'parallel-stage':''}`}>
         {entries.length>1&&<p className="parallel-stage-label">ПАРАЛЛЕЛЬНЫЕ НАПРАВЛЕНИЯ</p>}
         {entries.map(entry=><article className="step-glass-card glass" key={entry.id}>{logo(entry,'step-company-logo')}<span className="step-company-name">{entry.name}</span><span className="step-period">{entry.period}</span><h3>{entry.role}</h3><button className="text-link" onClick={()=>open(entry)}>Подробнее<ArrowUpRight size={15}/></button></article>)}
       </div></div>
-      <nav className="career-step-navigation" aria-label="Этапы карьеры">{stages.map((group,i)=><button key={group[0].id} className={active===i?'selected':''} aria-label={`${group[0].start.slice(0,4)} — ${group.map(e=>e.name).join(' и ')}`} aria-current={active===i?'step':undefined} onClick={()=>setActive(i)}><span>{group[0].start.slice(0,4)}</span><i/></button>)}</nav>
-      <span className="career-scroll-caption">{String(active+1).padStart(2,'0')} / 05</span>
+      <div className="career-stage-controls"><nav className="career-step-navigation" aria-label="Этапы карьеры">{stages.map((group,i)=><button key={group[0].id} className={active===i?'selected':''} aria-label={`${group[0].start.slice(0,4)} — ${group.map(e=>e.name).join(' и ')}`} aria-current={active===i?'step':undefined} onClick={()=>selectStage(i)}><span>{group[0].start.slice(0,4)}</span><i/></button>)}</nav>
+        <div className="career-playback-row"><button className="career-mode-toggle" type="button" aria-pressed={autoPlay} onClick={()=>setAutoPlay(value=>!value)}>{autoPlay?<Pause size={14}/>:<Play size={14}/>}<span>{autoPlay?'Автоматически':'Вручную'}</span></button><span className="career-scroll-caption">{String(active+1).padStart(2,'0')} / 05</span></div>
+      </div>
     </div></div>
     <div className="career-details wrap" id="career-details">
       <div className="career-heading"><span className="eyebrow">ОПЫТ В ДЕТАЛЯХ</span><h2>Компании, задачи<br/>и результаты.</h2><p>Армада-Авто и LIFE PAY — параллельные направления работы с 2025 года.</p></div>

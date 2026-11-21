@@ -1,8 +1,9 @@
-import {useEffect,useRef,useState} from 'react';
+import {forwardRef,useEffect,useImperativeHandle,useRef,useState,type SyntheticEvent} from 'react';
 import {assetUrl} from '../lib/assetUrl';
-type Props={name:'introduction'|'professional-growth';className?:string;label:string;scrub?:boolean};
-export function VideoScene({name,className='',label,scrub=false}:Props){
+type Props={name:'introduction'|'professional-growth';className?:string;label:string;scrub?:boolean;playbackEnabled?:boolean;onTimeUpdate?:(event:SyntheticEvent<HTMLVideoElement>)=>void};
+export const VideoScene=forwardRef<HTMLVideoElement,Props>(function VideoScene({name,className='',label,scrub=false,playbackEnabled=true,onTimeUpdate},forwardedRef){
  const ref=useRef<HTMLVideoElement>(null);
+ useImperativeHandle(forwardedRef,()=>ref.current as HTMLVideoElement,[]);
  const [failed,setFailed]=useState(false);
  useEffect(()=>{
   const video=ref.current;if(!video)return;
@@ -11,7 +12,7 @@ export function VideoScene({name,className='',label,scrub=false}:Props){
   let visible=false,loaded=false;
   const sync=()=>{
    if(scrub){video.pause();if(visible&&!loaded&&!motion.matches&&!connection?.saveData){loaded=true;video.load()}return}
-   const stop=!visible||document.hidden||motion.matches||connection?.saveData;
+   const stop=!playbackEnabled||!visible||document.hidden||motion.matches||connection?.saveData;
    if(stop){video.pause();return}
    video.muted=true;
    video.play().catch(()=>{});
@@ -21,9 +22,9 @@ export function VideoScene({name,className='',label,scrub=false}:Props){
   document.addEventListener('visibilitychange',sync);
   motion.addEventListener('change',sync);
   return()=>{observer.disconnect();video.pause();document.removeEventListener('visibilitychange',sync);motion.removeEventListener('change',sync)};
- },[scrub]);
+ },[scrub,playbackEnabled]);
  return <div className={`video-scene ${className}`}>
-  <video ref={ref} loop muted playsInline preload={name==='introduction'?'metadata':'none'} poster={assetUrl(`/images/${name}-poster.jpg`)} onPlay={()=>setFailed(false)} onError={()=>setFailed(true)} aria-label={label}><source src={assetUrl(`/videos/${name}.mp4`)} type="video/mp4"/></video>
+  <video ref={ref} loop muted playsInline preload={name==='introduction'?'metadata':'none'} poster={assetUrl(`/images/${name}-poster.jpg`)} onTimeUpdate={onTimeUpdate} onPlay={()=>setFailed(false)} onError={()=>setFailed(true)} aria-label={label}><source src={assetUrl(`/videos/${name}.mp4`)} type="video/mp4"/></video>
   {failed&&<p className="video-notice" role="status">Видео не загрузилось. Показан постер.</p>}
  </div>;
-}
+});

@@ -69,6 +69,19 @@ html,body,.cinematic-portfolio{background:#dce8ec;color:var(--approved-ink)}
 .cinematic-portfolio .image-inspect{background:rgba(222,237,243,.7)!important}
 .cinematic-portfolio .offer-form :is(input:not([type=checkbox]),select,textarea){background:rgba(220,235,241,.2);border-color:rgba(245,251,253,.78)}
 
+/* Career video: stages follow the film automatically and remain manually selectable. */
+.cinematic-portfolio .career-video-shell{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.cinematic-portfolio .career-video-shell>.video-scene{position:absolute;inset:0;z-index:0}
+.cinematic-portfolio .career-video-shell .career-scene-shade{z-index:1}
+.cinematic-portfolio .career-video-shell .career-scene-header{top:13%;z-index:2}
+.cinematic-portfolio .career-stage-panel{animation:career-stage-rise .58s cubic-bezier(.22,1,.36,1) both}
+.cinematic-portfolio .career-stage-controls{position:absolute;left:6%;right:6%;bottom:2%;z-index:5}
+.cinematic-portfolio .career-stage-controls .career-step-navigation{position:static;inset:auto;width:100%}
+.cinematic-portfolio .career-playback-row{display:flex;align-items:center;justify-content:space-between;margin-top:7px}
+.cinematic-portfolio .career-mode-toggle{display:inline-flex;align-items:center;gap:8px;min-height:34px;padding:7px 12px;border:1px solid rgba(246,252,255,.72);border-radius:999px;color:#f4f8fa;background:rgba(41,59,69,.34);box-shadow:inset 0 1px 0 rgba(255,255,255,.26);backdrop-filter:blur(10px);font-size:9px;letter-spacing:.025em}
+.cinematic-portfolio .career-scroll-caption{position:static;color:#f4f8fa}
+@keyframes career-stage-rise{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+
 @media(min-aspect-ratio:2/1) and (min-width:1101px){
   .cinematic-portfolio .hero{min-height:720px}
   .cinematic-portfolio .hero-content{padding-top:92px}
@@ -102,4 +115,38 @@ html,body,.cinematic-portfolio{background:#dce8ec;color:var(--approved-ink)}
   .cinematic-portfolio .task-grid article:nth-child(3n){border-right:1px solid rgba(118,146,160,.25)}
   .cinematic-portfolio .task-grid article:nth-child(2n){border-right:0}
   .cinematic-portfolio .task-grid h3{font-size:12px}
+
+  /* The mobile scene preserves the complete 16:9 frame instead of cropping it into a narrow strip. */
+  .cinematic-portfolio .career-scroll-story{height:auto!important;min-height:0!important;background:transparent!important;padding:84px 0 34px;scroll-margin-top:0}
+  .cinematic-portfolio .career-sticky-scene{position:relative!important;height:auto!important;min-height:0!important;overflow:visible!important;padding:0}
+  .cinematic-portfolio .career-video-shell{position:relative;inset:auto;z-index:0;width:calc(100% - 28px);aspect-ratio:16/9;margin:0 auto;border:1px solid rgba(248,252,254,.92);border-radius:28px;overflow:hidden;background:#aebdc4;box-shadow:inset 1px 1px 0 #fff,0 16px 38px rgba(31,61,76,.13)}
+  .cinematic-portfolio .career-video-shell>.video-scene{position:absolute;inset:0;width:100%;height:100%}
+  .cinematic-portfolio .career-video-shell .video-scene video{width:100%;height:100%;object-fit:contain!important;object-position:50% 50%!important;transform:none!important;background:#aebdc4}
+  .cinematic-portfolio .career-video-shell .career-scene-shade{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(10,26,35,.62),rgba(12,29,38,.2) 54%,transparent 78%),linear-gradient(0deg,rgba(14,29,38,.14),transparent 55%)}
+  .cinematic-portfolio .career-video-shell .career-scene-header{top:20px;left:20px;right:20px;max-width:none;text-shadow:0 2px 12px rgba(7,21,29,.52)}
+  .cinematic-portfolio .career-video-shell .career-scene-header>.eyebrow{font-size:7px}
+  .cinematic-portfolio .career-video-shell .career-scene-header h2{font-size:27px;line-height:1.08;margin:11px 0 0}
+  .cinematic-portfolio .career-stage-stack{position:relative!important;inset:auto!important;width:calc(100% - 28px)!important;height:auto!important;margin:-22px auto 0;z-index:3}
+  .cinematic-portfolio .career-stage-panel{position:relative!important;inset:auto!important;display:grid;gap:8px;visibility:visible!important;opacity:1!important}
+  .cinematic-portfolio .parallel-stage-label{margin:0 10px 2px;color:#234352;text-align:left;text-shadow:none}
+  .cinematic-portfolio .step-glass-card,.cinematic-portfolio .parallel-stage .step-glass-card{padding:17px 18px;border-radius:25px!important;background:linear-gradient(132deg,rgba(235,245,249,.5),rgba(151,174,186,.25))!important;backdrop-filter:blur(14px) saturate(110%)!important;-webkit-backdrop-filter:blur(14px) saturate(110%)!important}
+  .cinematic-portfolio .step-company-logo,.cinematic-portfolio .parallel-stage .step-company-logo{height:19px;max-width:88px;margin:0 0 8px;float:none}
+  .cinematic-portfolio .step-company-logo[src$=".ico"],.cinematic-portfolio .step-company-logo[src$=".png"]{width:25px;height:25px}
+  .cinematic-portfolio .step-company-name,.cinematic-portfolio .parallel-stage .step-company-name{font-size:14px;line-height:1.35;padding:0}
+  .cinematic-portfolio .step-period,.cinematic-portfolio .parallel-stage .step-period{font-size:10px;line-height:1.55;margin:5px 0 7px}
+  .cinematic-portfolio .step-glass-card h3,.cinematic-portfolio .parallel-stage .step-glass-card h3{clear:none;font-size:18px;line-height:1.32;margin:0 0 5px}
+  .cinematic-portfolio .step-glass-card .text-link,.cinematic-portfolio .parallel-stage .text-link{font-size:10px;margin:1px 0 0;padding:5px 0}
+  .cinematic-portfolio .career-stage-controls{position:relative;inset:auto;width:calc(100% - 28px);margin:13px auto 0}
+  .cinematic-portfolio .career-stage-controls .career-step-navigation{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+  .cinematic-portfolio .career-step-navigation button{min-width:0;min-height:42px;padding:5px 0;color:#43606e;text-shadow:none;text-align:center;font-size:9px}
+  .cinematic-portfolio .career-step-navigation i{height:2px;margin-top:7px;background:rgba(83,112,126,.26)}
+  .cinematic-portfolio .career-step-navigation .selected i{height:3px;background:#173c4e}
+  .cinematic-portfolio .career-step-navigation button.selected{color:#102f3e}
+  .cinematic-portfolio .career-playback-row{margin-top:7px}
+  .cinematic-portfolio .career-mode-toggle{min-height:33px;padding:6px 11px;color:#173847;background:rgba(221,235,241,.38);border-color:rgba(250,253,255,.9);font-size:9px}
+  .cinematic-portfolio .career-scroll-caption{color:#345463;text-shadow:none;font-size:8px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .cinematic-portfolio .career-stage-panel{animation:none}
 }
