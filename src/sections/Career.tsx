@@ -42,7 +42,7 @@ export function Career(){
     </div></div>
     <div className="career-details wrap" id="career-details">
       <div className="career-heading"><span className="eyebrow">ОПЫТ В ДЕТАЛЯХ</span><h2>Компании, задачи<br/>и результаты.</h2><p>Армада-Авто и LIFE PAY — параллельные направления работы с 2025 года.</p></div>
-      <div className="timeline">{career.slice(0,4).map(item)}<div className="parallel-label"><span className="status-dot"/>ПАРАЛЛЕЛЬНЫЕ НАПРАВЛЕНИЯ</div><div className="parallel-careers">{career.filter(c=>c.parallel).map((c,i)=>item(c,i+4))}</div></div>
+      <div className="timeline career-lens glass">{career.slice(0,4).map(item)}<div className="parallel-label"><span className="status-dot"/>ПАРАЛЛЕЛЬНЫЕ НАПРАВЛЕНИЯ</div><div className="parallel-careers">{career.filter(c=>c.parallel).map((c,i)=>item(c,i+4))}</div></div>
     </div>
   </section>;
 }
