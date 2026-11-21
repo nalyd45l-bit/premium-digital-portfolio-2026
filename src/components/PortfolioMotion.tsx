@@ -87,6 +87,10 @@ export function PortfolioMotion() {
     const animateCount = (element: HTMLElement) => {
       const target = Number(element.dataset.count);
       if (!Number.isFinite(target) || target < 0) return;
+      if (reducedMotion.matches) {
+        element.textContent = new Intl.NumberFormat('ru-RU').format(target);
+        return;
+      }
 
       const startedAt = performance.now();
       const duration = 1350;
@@ -231,6 +235,22 @@ export function PortfolioMotion() {
       activeTilt.classList.remove('is-tilting');
       activeTilt = null;
     };
+
+    const onReducedMotionChange = (event: MediaQueryListEvent) => {
+      if (!event.matches) return;
+      frames.forEach((frame) => window.cancelAnimationFrame(frame));
+      frames.clear();
+      countTargets.forEach((element) => {
+        const target = Number(element.dataset.count);
+        if (Number.isFinite(target) && target >= 0) {
+          element.textContent = new Intl.NumberFormat('ru-RU').format(target);
+        }
+      });
+      resetTilt();
+    };
+
+    reducedMotion.addEventListener('change', onReducedMotionChange);
+    cleanups.push(() => reducedMotion.removeEventListener('change', onReducedMotionChange));
 
     const onTiltMove = (event: PointerEvent) => {
       if (!(event.target instanceof Element)) return;
